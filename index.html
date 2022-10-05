@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ComGamer</title>
+
+
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/mediaqueries.css" />
+  <link rel="stylesheet" href="./assets/animaciones.css" />
+  <script src="https://kit.fontawesome.com/7e2fb7207f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <img src="./assets/img/logo.png" alt="Logo de ComGamer" class="logo" />
+    <nav class="navbar">
+      <div class="menu-label">
+        <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+      </div>
+
+
+      <ul class="navbar-list">
+        <li><a class="navbar-link" href="#hero">Inicio</a></li>
+        <li><a class="navbar-link" href="#discover">Armá tu PC</a></li>
+        <li><a class="navbar-link" href="#products">Productos</a></li>
+
+        <li>
+          <a href="login.html">Login / Registro</a>
+        </li>
+      </ul>
+      <div class="cart-label">
+       <img src="./assets/img/store-24.png" alt="Carrito de compras" class="cart-icon" /> 
+      </div>
+
+      <div class="cart">
+
+        <h2>Tus productos</h2>
+        <div class="cart-container">
+        </div>
+        <span class="divider"></span>
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total"></span>
+        </div>
+        <button class="btn-buy">Comprar</button>
+
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-info">
+        <h1>Las novedades del gaming sólo acá</h1>
+        <p>
+          ComGamer es un portal web de compra de artículos de computación con variedad para el público gamer y entusiasta.
+        </p>
+        <a href="#products">Productos</a>
+      </div>
+      <div class="hero-card">
+        <img src="./assets/img/products/presentacion.png" alt="BTC de ejemplo" />
+        <div class="hero-card-info">
+          <div class="hero-card-top">
+            <h3>"Combo Gamer - Estudiantil 😎🔥"</h3>
+          </div>
+          <div class="hero-card-bottom">
+            
+            </div>
+            <div class="hero-card-price">
+              <p>Valor</p>
+              <span>$13874</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- info -->
+    <section id="info">
+      <h2>Las mejores marcas están con nosotros.</h2>
+      <div class="info-cards-container">
+        <div class="info-card">
+          <img src="./assets/img/info/AMD_Logo.svg.png" alt="Icono NFTs" />
+          <h3>AMD</h3>
+          <p>
+            Advanced Micro Devices, Inc. es una compañía estadounidense de semiconductores con sede en Santa Clara, California, que desarrolla procesadores de computación y productos tecnológicos similares de consumo.
+          </p>
+        </div>
+        <div class="info-card">
+          <img src="./assets/img/info/Intel_logo_(2006-2020).svg.png" alt="Icono NFTs" />
+          <h3>Intel</h3>
+          <p>
+            Intel Corporation es el mayor fabricante de circuitos integrados del mundo según su cifra de negocio anual. La compañía estadounidense es la creadora de la serie de procesadores x86.
+          </p>
+        </div>
+        <div class="info-card">
+          <img src="./assets/img/info/kisspng-laptop-republic-of-gamers-asus-graphics-cards-vi-republic-of-gamers-5b27645e7eb2a3.617925951529308254519.png" alt="Icono NFTs" />
+          <h3>Republic of Gamers</h3>
+          <p>
+            Republic of Gamers es una marca utilizada por Asus desde 2006, que abarca una gama de hardware de PC, PCs personales, periféricos y accesorios orientados principalmente a los juegos de PC.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- discover -->
+    
+    <section id="discover">
+    
+      <!-- discover info text -->
+    
+      <div class="discover-info">
+        <h2>Armá tu PC con estas piezas fundamentales</h2>
+        <div class="discover-text">
+          <p>
+            Podés armarte una PC básica con estos 3 elementos, son los más vendidos ¡Aprovechalos!
+          </p>
+          <a href="#">Empezar ahora</a>
+        </div>
+      </div>
+
+      <!-- discover cards -->
+      <div class="discover-cards">
+        <img src="./assets/img/products/placamadre.png" alt="placamadre" />
+        <img src="./assets/img/products/ram.png" alt="ram" />
+        <img src="./assets/img/products/procesador1.png" alt="procesador" />
+      </div>
+    </section>
+    <!-- products -->
+    <section id="products">
+      <h2>Todos los productos</h2>
+      <!-- categories -->
+      <div class="categories">
+        <button class="category active" data-category="todas"> Todo </button>
+        <button class="category" data-category="placavideo"> Placa de video </button>
+        <button class="category" data-category="procesadores"> Procesadores </button>
+        <button class="category" data-category="placamadre"> Placas Madres </button>
+        <button class="category" data-category="ram"> Memorias Ram </button>
+        <button class="category" data-category="mouseteclado">️ Teclados y Mouses</button>
+      </div>
+
+      <!-- products -->
+      <div class="products-container">
+
+      </div>
+      <button class="btn-load">Ver Más</button>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <ul class="footer-links">
+        <li><a href="#">Términos de Uso</a></li>
+        <li><a href="#">Trabajá con Nosotros</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+    </div>
+    <p>Hecho con ❤️ por <span>@josedebuck_</span></p>
+  </footer>
+  <script src="./assets/data.js"></script>
+  <script src="./assets/index.js"></script>
+</body>
+
+</html>
